@@ -1,0 +1,14 @@
+<html >
+ <head> 
+</head>
+  <body>
+   <img src="./AR_Rahman.jpg" alt="Modi" width="300" height="200"><br>
+	 <span>AR Rahman</span><br>
+	 
+	 <h3>About AR Rahman</h3>
+		<p style="text-align: center; "><b><i>
+		Allah Rakha Rahman (pronunciation (help·info); born A. S. Dileep Kumar; 6 January 1967) is an Indian music composer, record producer, singer and songwriter, popular for his works in Indian cinema; predominantly in Tamil and Hindi films, with occasional forays in international cinema, as well as an arrangement of the 20th Century Studios fanfare for Star Studios. He is a winner of six National Film Awards, two Academy Awards, two Grammy Awards, a BAFTA Award, a Golden Globe Award, fifteen Filmfare Awards and seventeen Filmfare Awards South.In 2010, the Indian government conferred him with the Padma Bhushan, the nation's third-highest civilian award.</b></i>
+		</p>
+	 
+  </body>
+</html>
