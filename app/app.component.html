@@ -1,0 +1,63 @@
+<mat-sidenav-container class="sidenav-container">
+   <mat-sidenav #sidenav>
+      <mat-nav-list (click)="sidenav.close()" >
+         <a mat-list-item routerLink="/courselist"> 
+            <mat-icon>library_books</mat-icon>
+               <span>CoursesList</span>   
+         </a>
+        
+         <a mat-list-item routerLink="/addcourse">
+               
+            <mat-icon>person_add</mat-icon>
+               <span>Add new course</span>     
+         </a>
+                    
+      </mat-nav-list>
+        
+   </mat-sidenav>
+   <mat-toolbar color="primary">
+            
+      <button mat-icon-button (click)="sidenav.open()">
+          
+         <mat-icon>menu</mat-icon>
+               
+      </button>
+      <a mat-button routerLink="/home1">
+          
+         <mat-icon>home</mat-icon>
+          Home             
+      </a>
+            
+      <a mat-button routerLink="/form">
+          
+         <mat-icon>person_add</mat-icon>
+          Register
+               
+      </a>
+            
+      <a mat-button routerLink="/login">
+          
+         <mat-icon>account_circle</mat-icon>
+          Login
+               
+      </a>
+      <a mat-button routerLink="/about" >
+         <mat-icon>about</mat-icon>
+          About      
+      </a>
+      <a mat-button routerLink="/stepper" >
+         <mat-icon>about</mat-icon>
+          Stepper      
+      </a>
+      <a mat-button routerLink="/stepperdisp" >
+         <mat-icon>about</mat-icon>
+          StepperRead      
+      </a> 
+      <a mat-button routerLink="/home" >
+         <mat-icon>about</mat-icon>
+          HomeTest      
+      </a> 
+   </mat-toolbar>
+</mat-sidenav-container>
+ 
+    <router-outlet></router-outlet>

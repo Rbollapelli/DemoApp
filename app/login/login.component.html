@@ -1,0 +1,48 @@
+<style>
+    .myDiv {
+    border: 5px outset red;
+    background-color: rgb(87, 176, 224);    
+    text-align: center;
+    }
+    * {
+    box-sizing: border-box;
+    }
+    .box {
+    float: left;
+    width: 30.33%;
+    padding: 30px;
+    }
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+ </style>
+ <div *ngIf="loginsuc=='true'">
+    <p  class="primary">Login successfull</p>
+ </div>
+ <div class="myDiv">
+    <div *ngIf="formenable=='true'">
+       <form [formGroup]="formGroup" (ngSubmit)="login()" >
+       <h3>Login Form</h3>
+       <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+             <mat-label>Enter User Name</mat-label>
+             <mat-icon> person_pin</mat-icon>
+             <input matInput  formControlName="fullname" >
+             <mat-error *ngIf="formGroup.controls['fullname'].hasError('pattern')">Full name length should be 6 to 31  characters</mat-error>
+          </mat-form-field>
+         
+       </p>
+       <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+             <mat-label>Enter Password</mat-label>
+             <mat-icon>remove_red_eye</mat-icon>
+             <input type="password" matInput  formControlName="password" >
+             <mat-error *ngIf="formGroup.controls['password'].hasError('required')">password is required</mat-error>
+          </mat-form-field>
+       </p>
+       <button mat-raised-button color="accent" appearance="outline" class="example-full-width">Login</button>
+       </form>
+    </div>
+ </div>

@@ -1,0 +1,121 @@
+<div>
+   <mat-stepper #stepper>
+     <mat-step [stepControl]="firstFormGroup">
+       <form [formGroup]="firstFormGroup">
+         <ng-template matStepLabel>Basic Information</ng-template>
+         <mat-form-field appearance="fill">
+           <mat-label> Name</mat-label>
+           <input matInput   formControlName="name" >
+           <mat-error *ngIf="firstFormGroup.controls['name'].hasError('pattern')">Full name length should be 6 to 31  characters</mat-error>
+         </mat-form-field>
+         <br>
+         <mat-form-field appearance="fill">
+           <mat-label> Email Id</mat-label>
+           <input matInput placeholder="emailid" formControlName="emailid" required>  
+         </mat-form-field>
+         <br>
+         <mat-form-field appearance="fill">
+           <mat-label>FatherName</mat-label>
+           <input matInput   formControlName="fathername" required>  
+           <mat-error *ngIf="firstFormGroup.controls['fathername'].hasError('pattern')">Full name length should be 6 to 31  characters</mat-error>
+         </mat-form-field>
+         <br>
+         <mat-form-field appearance="fill">
+           <mat-label>MotherName</mat-label>
+           <input matInput   formControlName="mothername" required>  
+           <mat-error *ngIf="firstFormGroup.controls['fathername'].hasError('pattern')">Full name length should be 6 to 31  characters</mat-error>
+         </mat-form-field>
+         <br>
+         <mat-radio-group aria-label="Select an option" formControlName="gender">
+           <mat-label>Select Gender</mat-label>
+           <mat-radio-button value="male">male</mat-radio-button>
+           <mat-radio-button value="female">female</mat-radio-button>
+         </mat-radio-group>
+         <br>
+         <mat-form-field appearance="fill">
+           <mat-label>Select DOB</mat-label>
+           <input matInput [matDatepicker]="picker" formControlName="dob">
+           <mat-hint>mm/dd/yyyy</mat-hint>
+           <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+           <mat-datepicker #picker></mat-datepicker>
+         </mat-form-field>
+         <br>
+         <mat-form-field appearance="fill">
+           <mat-label>Mobile Number</mat-label>
+           <input matInput placeholder="mobilenumber" formControlName="mobilenumber" required>  
+           <mat-error *ngIf="firstFormGroup.controls['mobilenumber'].hasError('pattern')">Mobile number should be number and number shuld be 10 digit.</mat-error>
+         </mat-form-field>
+         <br>               
+         <div>
+           <button  mat-raised-button color="primary" matStepperNext >Next </button>
+         </div>
+       </form>
+     </mat-step>
+     <mat-step [stepControl]="firstFormGroup" label="Bank Details">
+       <form [formGroup]="firstFormGroup">
+         <mat-form-field appearance="fill">
+           <mat-label>Full Name</mat-label>
+           <input matInput   formControlName="bfullname" required>            
+         </mat-form-field>
+         <br>
+         <mat-form-field appearance="fill">
+           <mat-label>Bank Name</mat-label>
+           <input matInput   formControlName="bankname" required>            
+         </mat-form-field>
+         <br> 
+         <mat-form-field appearance="fill">
+           <mat-label>Bank Account Number</mat-label>
+           <input matInput   formControlName="bankaccno" required>            
+         </mat-form-field>
+         <br>  
+         <mat-form-field appearance="fill">
+           <mat-label>IFSC Code</mat-label>
+           <input matInput placeholder="ifscno" formControlName="ifscno" required>            
+         </mat-form-field>
+         <br> 
+         <mat-radio-group aria-label="Select Option" formControlName="ibank">
+           <mat-label>You have internet banking</mat-label>
+           <mat-radio-button value="yes">yes</mat-radio-button>
+           <mat-radio-button value="no">no</mat-radio-button>
+         </mat-radio-group>
+         <br>
+         <mat-radio-group aria-label="Select Option" formControlName="mbank">
+           <mat-label>You have Mobile banking</mat-label>
+           <mat-radio-button value="yes">yes</mat-radio-button>
+           <mat-radio-button value="no">no</mat-radio-button>
+         </mat-radio-group>
+         <br>
+         <div>
+           <button  mat-raised-button color="accent" matStepperPrevious>Back</button>&nbsp;
+           <button  mat-raised-button color="primary" matStepperNext>Next</button>
+         </div>
+       </form>
+     </mat-step>
+     <mat-step [stepControl]="firstFormGroup" label="Address Details">
+       <form [formGroup]="firstFormGroup">
+         <mat-form-field appearance="fill">
+           <mat-label>Prasent Address </mat-label>
+           <textarea matInput placeholder="address" formControlName="prasentaddress" required></textarea>
+         </mat-form-field>
+         <br>
+         <mat-form-field appearance="fill">
+           <mat-label>Permanent address</mat-label>
+           <textarea matInput placeholder="address" formControlName="permnentaddress" required></textarea>
+         </mat-form-field>
+         <br>
+         <div>
+           <button  mat-stroked-button color="accent" matStepperPrevious>Back</button>&nbsp;
+           <button  mat-icon-button color="primary" matStepperNext>Next</button>
+         </div>
+       </form>
+     </mat-step>
+     <mat-step>
+       <ng-template matStepLabel>Submiting the form</ng-template>
+       <div>
+         <button  mat-stroked-button color="accent" matStepperPrevious>Back</button>&nbsp;
+         <button mat-flat-button color="warn" (click)="stepper.reset()">Reset</button> &nbsp;
+         <button mat-icon-button color="primary" (click)="done()">Done</button>      
+       </div>
+     </mat-step>
+   </mat-stepper>
+ </div>

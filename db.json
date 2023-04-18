@@ -1,0 +1,200 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "RegistrationDetails": [
+    {
+      "fullname": "RaghuB",
+      "password": "ryderqwe",
+      "mobilenumber": "9966455936",
+      "email": "rag@gmai.com",
+      "dob": "2023-04-11T18:30:00.000Z",
+      "gender": "male",
+      "skills": "Angular Intermediate",
+      "id": 1
+    },
+    {
+      "fullname": "bollapeli",
+      "password": "ryder@143",
+      "mobilenumber": "9966455936",
+      "email": "abc@gmail.com",
+      "dob": "2023-04-11T18:30:00.000Z",
+      "gender": "",
+      "skills": "Angular Intermediate",
+      "id": 2
+    },
+    {
+      "fullname": "raghu_bollapelli",
+      "password": "raghu_bollapelli",
+      "mobilenumber": "9966455936",
+      "email": "raghu_bollapelli@gmail.com",
+      "dob": "2023-04-13T18:30:00.000Z",
+      "gender": "male",
+      "skills": "Angular Intermediate",
+      "id": 3
+    }
+  ],
+  "courseDetails": [
+    {
+      "subjectname": "Angular",
+      "version": "12",
+      "id": 1
+    },
+    {
+      "subjectname": "java",
+      "version": "1.8",
+      "id": 2
+    },
+    {
+      "subjectname": "Nodejs",
+      "version": "12",
+      "id": 3
+    },
+    {
+      "subjectname": "nodejs",
+      "version": "1.2",
+      "id": 4
+    },
+    {
+      "subjectname": "java",
+      "version": "1.8",
+      "id": 5
+    },
+    {
+      "subjectname": "Oracle",
+      "version": "10.x",
+      "id": 6
+    },
+    {
+      "subjectname": ".net",
+      "version": "15.x",
+      "id": 7
+    },
+    {
+      "subjectname": "selinum",
+      "version": "12.0",
+      "id": 8
+    },
+    {
+      "subjectname": "nodejs",
+      "version": "44",
+      "id": 9
+    },
+    {
+      "subjectname": "Java9",
+      "version": "1.9",
+      "id": 10
+    },
+    {
+      "subjectname": "Angular",
+      "version": "12",
+      "id": 11
+    }
+  ],
+  "Stepper": [
+    {
+      "name": "Bollapelli Raghu",
+      "emailid": "raghub@gmail.com",
+      "fathername": "Lakshmaiah",
+      "mothername": "Manemma",
+      "gender": "male",
+      "dob": "1988-09-03T18:30:00.000Z",
+      "mobilenumber": "9966455936",
+      "bfullname": "Bollapelli Raghu",
+      "bankname": "ICICI",
+      "bankaccno": "123123123123",
+      "ifscno": "ICICI000321",
+      "ibank": "yes",
+      "mbank": "yes",
+      "prasentaddress": "hno: 296/6/B  new reddycolony  yadavnagar  petrol bunk 506001",
+      "permnentaddress": "hno: 296/6/B  new reddycolony  yadavnagar  petrol bunk 506001",
+      "id": 1
+    },
+    {
+      "name": "Bollapelli Raghu",
+      "emailid": "raghub@gmail.com",
+      "fathername": "Lakshmaiah",
+      "mothername": "Manemma",
+      "gender": "male",
+      "dob": "1988-09-03T18:30:00.000Z",
+      "mobilenumber": "9966455936",
+      "bfullname": "Bollapelli Raghu",
+      "bankname": "ICICI",
+      "bankaccno": "123123123123",
+      "ifscno": "ICICI000321",
+      "ibank": "yes",
+      "mbank": "yes",
+      "prasentaddress": "hno: 296/6/B  new reddycolony  yadavnagar  petrol bunk 506001",
+      "permnentaddress": "hno: 296/6/B  new reddycolony  yadavnagar  petrol bunk 506001",
+      "id": 2
+    },
+    {
+      "name": "asssss",
+      "emailid": "aaa@gmail.com",
+      "fathername": "adsdsadad",
+      "mothername": "asdsadsads",
+      "gender": "male",
+      "dob": "2023-04-16T18:30:00.000Z",
+      "mobilenumber": "1234123412",
+      "bfullname": "asdad",
+      "bankname": "asdas",
+      "bankaccno": "121212121212",
+      "ifscno": "ICICI1312312",
+      "ibank": "yes",
+      "mbank": "yes",
+      "prasentaddress": "asdasdadasdaadadsadadaddadsd",
+      "permnentaddress": "adadadaddadadasdda",
+      "id": 3
+    },
+    {
+      "name": "raghuqwwwqwq",
+      "emailid": "rag@gmail.com",
+      "fathername": "xyzwqwwq",
+      "mothername": "xyxxxwqew",
+      "gender": "male",
+      "dob": "2016-04-17T18:30:00.000Z",
+      "mobilenumber": "9866986612",
+      "bfullname": "ramanujanrao",
+      "bankname": "ICICI",
+      "bankaccno": "1234567890",
+      "ifscno": "ICICI000123",
+      "ibank": "yes",
+      "mbank": "yes",
+      "prasentaddress": "HNO: 256/5/b/6 new reddy  colony Yadavnagar  hanmakonda 506001",
+      "permnentaddress": "HNO: 256/5/b/6 new reddy  colony Yadavnagar  hanmakonda 506001",
+      "id": 4
+    },
+    {
+      "name": "Bollapelliraghu",
+      "emailid": "raghuuu@gmail.com",
+      "fathername": "Lakshmaiah",
+      "mothername": "Manemma",
+      "gender": "male",
+      "dob": "2023-04-17T18:30:00.000Z",
+      "mobilenumber": "9966455936",
+      "bfullname": "Bollapelli Raghu",
+      "bankname": "ICICI",
+      "bankaccno": "1234567890",
+      "ifscno": "ICICI20000",
+      "ibank": "yes",
+      "mbank": "no",
+      "prasentaddress": "HNO:256/5/ Hyderabad  506100",
+      "permnentaddress": "HNO:256/5/ Hyderabad  506100",
+      "id": 5
+    }
+  ]
+}

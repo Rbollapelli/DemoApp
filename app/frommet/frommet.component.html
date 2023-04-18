@@ -1,0 +1,93 @@
+<style>
+    .myDiv {
+      border: 5px outset red;
+      background-color: rgb(224, 165, 87);    
+      text-align: center;
+    }
+    * {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+
+<div class="float-container,div1"  >
+    <div class="myDiv" >
+    <form [formGroup]="formGroup" (ngSubmit)="regSubmit()" >
+        <h3>Registration Form</h3>
+        <p>
+            <mat-form-field appearance="outline" class="example-full-width">
+              <mat-label>Full Name</mat-label><mat-icon> person_pin</mat-icon>
+              <input matInput  formControlName="fullname" >
+               <mat-error *ngIf="formGroup.controls['fullname'].hasError('pattern')">Full name length should be 6 to 31  characters</mat-error>
+            </mat-form-field>
+            &nbsp;&nbsp;
+            <mat-form-field appearance="outline" class="example-full-width">
+              <mat-label>Enter your Mobile number</mat-label><mat-icon>mobile_friendly</mat-icon>
+              <input matInput  formControlName="mobilenumber" >
+              <mat-error *ngIf="formGroup.controls['mobilenumber'].hasError('required')">Mobile number  should be numeric</mat-error>
+             
+            </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline" class="example-full-width">
+              <mat-label>Enter EmailId</mat-label><mat-icon>alternate_email</mat-icon>
+              <input matInput  formControlName="email" >
+              <mat-error *ngIf="formGroup.controls['email'].hasError('required')">Enter valid email id</mat-error>
+             
+            </mat-form-field>
+            &nbsp;&nbsp;
+            <mat-form-field appearance="outline" class="example-full-width">
+              <mat-label>Enter Password</mat-label><mat-icon>remove_red_eye</mat-icon>
+              <input matInput  formControlName="password" >
+              <mat-error *ngIf="formGroup.controls['password'].hasError('required')">Password number is required</mat-error>
+             
+            </mat-form-field>
+          </p>
+          <p>
+    
+            <mat-radio-group aria-label="Select an option" formControlName="gender">
+                <mat-label>Select Gender</mat-label>
+             <mat-radio-button value="male">male</mat-radio-button>
+            
+           <mat-radio-button value="female">female</mat-radio-button>
+            
+           </mat-radio-group></p>
+        
+            <p>
+                <mat-form-field appearance="fill">
+                <mat-label>Select DOB</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="dob">
+                <mat-hint>mm/dd/yyyy</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                &nbsp;&nbsp;
+                <mat-form-field appearance="fill">
+                    <mat-label>Skills</mat-label>
+                    <select matNativeControl  appearance="outline" class="example-full-width"  required formControlName="skills">
+                      <option value="Angular Basic">Angular Basic</option>
+                      <option value="Angular Intermediate">Angular Intermediate</option>
+                      <option value="Angular Advanced">Angular Advanced</option>
+                     
+                    </select>
+                  </mat-form-field> 
+                </p>
+                  <br><br>
+                  <button mat-raised-button color="accent" appearance="outline" class="example-full-width">Submit Form</button>
+                 
+              </form>
+              </div>
+              <mat-divider></mat-divider>   
+              </div>
+              <router-outlet></router-outlet>    

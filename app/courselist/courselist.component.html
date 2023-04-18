@@ -1,0 +1,13 @@
+<div>
+    <h3>Course Details</h3>
+    <table border="4">
+        <tr>
+            <th>SubjectName</th>
+            <th>Version</th>
+        </tr>
+        <tr *ngFor="let  c of courselist">
+            <td>{{c.subjectname}}</td>
+            <td>{{c.version}}</td>
+        </tr>
+    </table>
+</div>

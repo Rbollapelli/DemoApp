@@ -1,0 +1,379 @@
+<mat-sidenav-container >
+    <mat-sidenav #sidenav>
+         
+       <mat-nav-list (click)="sidenav.close()" >
+           
+          <a mat-list-item routerLink="/form">
+                
+             <mat-icon>library_books</mat-icon>
+                <span>Courses</span>
+                   
+          </a>
+           
+          <a mat-list-item routerLink="about">
+                
+             <mat-icon>question_answer</mat-icon>
+                <span>About</span>
+                   
+          </a>
+          <a mat-list-item routerLink="/form">
+                
+             <mat-icon>person_add</mat-icon>
+                <span>Register</span>
+                   
+          </a>
+           
+          <a mat-list-item routerLink="/form">
+                
+             <mat-icon>account_circle</mat-icon>
+                <span>Login</span>
+                   
+          </a>
+            
+       </mat-nav-list>
+         
+    </mat-sidenav>
+    <mat-toolbar color="primary">
+             
+       <button mat-icon-button (click)="sidenav.open()">
+           
+          <mat-icon>menu</mat-icon>
+                
+       </button>
+             <a mat-button [matMenuTriggerFor]="dropdown">
+        dropdown
+             </a>
+             
+       <mat-menu #dropdown>
+             <button mat-menu-item routerLink="/form">Courses</button>
+             <button mat-menu-item routerLink="/form">about</button>
+                
+       </mat-menu>
+             
+       <a mat-button>
+           
+          <mat-icon>person_add</mat-icon>
+           Register
+                
+       </a>
+             
+       <a mat-button>
+           
+          <mat-icon>account_circle</mat-icon>
+           Login
+                
+       </a>
+    </mat-toolbar>
+    <div>
+           
+       <mat-form-field appearance="fill">
+                
+          <mat-label>Select a date</mat-label>
+                <input matInput [matDatepicker]="picker">
+                
+          <mat-hint>mm/dd/yyyy</mat-hint>
+                
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                
+          <mat-datepicker #picker></mat-datepicker>
+              
+       </mat-form-field>
+           
+    </div>
+        
+    <mat-divider></mat-divider>
+        
+    <div>
+             
+       <mat-chip-listbox selectable multiple aria-label="Hobbies Selection">
+             
+          <mat-chip-option>Cricket</mat-chip-option>
+             
+          <mat-chip-option color="accent">Dancing</mat-chip-option>
+             
+          <mat-chip-option selected>Reading books</mat-chip-option>
+                
+       </mat-chip-listbox>
+           
+    </div>
+        
+    <mat-divider></mat-divider>
+        
+    <div>
+             
+       <mat-checkbox>Hello</mat-checkbox>
+             
+       <mat-checkbox>bye</mat-checkbox>
+           
+    </div>
+        
+    <div>
+             
+       <mat-radio-group aria-label="Select an option">
+           
+          <mat-radio-button value="male">male</mat-radio-button>
+           
+          <mat-radio-button value="female">female</mat-radio-button>
+                
+       </mat-radio-group>
+           
+    </div>
+    <ul>
+       <li ><a routerLink="home">Home</a></li>
+       <li ><a routerLink="form">RegisterForm</a></li>
+       </ul> 
+      
+ 
+       
+ 
+       <div>
+          
+          <mat-progress-bar mode="determinate" value="20"></mat-progress-bar>
+                <br>
+                
+          <mat-divider></mat-divider>
+                
+          <mat-progress-bar mode="indeterminate" value="20"></mat-progress-bar>
+                <br>
+                
+          <mat-divider></mat-divider>
+                
+          <mat-progress-bar mode="buffer" value="20"></mat-progress-bar>
+                <br>
+                
+          <mat-divider></mat-divider>
+                
+          <mat-progress-bar mode="query" value="20"></mat-progress-bar>
+                <br>
+                
+          <mat-divider></mat-divider>
+                
+          <mat-slider><input matSliderThumb></mat-slider>
+                <br>
+                
+          <mat-divider></mat-divider>
+               
+                
+          <mat-slider  min="100"  max="300">
+                     <input value="200" matSliderStartThumb>
+                     <input value="250" matSliderEndThumb>
+                   
+          </mat-slider>
+ 
+          <mat-slider min="0" max="100000" step="1000"  discrete>
+             <input matSliderThumb>
+           </mat-slider>
+          <mat-spinner></mat-spinner>
+       </div>
+ </mat-sidenav-container>
+   <ul>
+     <li ><a routerLink="home">Home</a></li>
+     <li ><a routerLink="form">RegisterForm</a></li>
+     </ul> 
+     <router-outlet></router-outlet>
+ 
+
+  <br><br>
+  <br><br>
+
+<button mat-button>First  Ang Metirial </button><br>
+<button mat-raised-button color="primary">First  Ang Metirial </button><br><br>
+<button mat-stroked-button color="accent">First  Ang Metirial </button><br><br><br>
+<button mat-flat-button color="warn"> First  Ang Metirial </button><br><br><br><br>
+<button mat-icon-button color="primary"> First  Ang Metirial </button><br><br><br><br><br>
+<button mat-fab color="primary"> First  Ang Metirial </button><br><br><br><br><br>
+<button mat-mini-fab color="primary"> First  Ang Metirial <mat-icon matBadge="1" matBadgeColor="warn">arrow_right_alt</mat-icon> </button><br><br><br><br><br>
+
+<div>
+
+    <mat-form-field appearance="fill">
+    
+    <mat-label>Select a date</mat-label>
+    
+    <input matInput [matDatepicker]="picker">
+    
+ <mat-hint>mm/dd/yyyy</mat-hint>
+    
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    
+    <mat-datepicker #picker></mat-datepicker>
+    
+    </mat-form-field></div>
+    
+    <mat-divider></mat-divider>
+    
+    <div>
+    
+     <mat-chip-listbox aria-label="Hobbies Selection">
+    
+  <mat-chip-option>Cricket</mat-chip-option>
+    
+   <mat-chip-option color="accent">Dancing</mat-chip-option>
+    
+    <mat-chip-option selected>Reading books</mat-chip-option>
+    
+    </mat-chip-listbox>
+    
+    </div>
+    
+    <mat-divider></mat-divider>
+    
+    <div>
+    
+    <mat-checkbox>Hello</mat-checkbox>
+    
+    <mat-checkbox>bye</mat-checkbox>
+    
+    </div>
+    
+    <div>
+    
+    <mat-radio-group aria-label="Select an option">
+    
+     <mat-radio-button value="male">male</mat-radio-button>
+    
+   <mat-radio-button value="female">female</mat-radio-button>
+    
+   </mat-radio-group></div>
+   
+   <div>
+         
+      <mat-stepper #stepper>
+                 
+         <mat-step [stepControl]="firstFormGroup">
+                        
+            <form [formGroup]="firstFormGroup">
+                               
+               <ng-template matStepLabel>Basic Information</ng-template>
+                               
+               <mat-form-field appearance="fill">
+                                      
+                  <mat-label> Name</mat-label>
+                                      <input matInput placeholder="First Name" formControlName="fCtrl" required>
+                                  
+               </mat-form-field>
+                               
+               <div>
+                                    <button mat-button matStepperNext>Next</button>
+                                  
+               </div>
+                           
+            </form>
+                    
+         </mat-step>
+                
+                 
+         <mat-step [stepControl]="secondFormGroup" label="Educational">
+                      
+            <form [formGroup]="secondFormGroup">
+                             
+               <mat-form-field appearance="fill">
+                                    
+                  <mat-label> Course Name</mat-label>
+                                    <input matInput placeholder="B.tech,M.tech" formControlName="sCtrl" required>
+                                
+               </mat-form-field>
+                             
+               <div>
+                                  <button mat-button matStepperPrevious>Back</button>
+                                  <button mat-button matStepperNext>Next</button>
+                                
+               </div>
+                         
+            </form>
+                  
+         </mat-step>
+                 
+         <mat-step>
+                      
+            <ng-template matStepLabel>Submiting the form</ng-template>
+                      
+            <div>
+               <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper.reset()">Reset</button>      
+            </div>
+                    
+         </mat-step>
+               
+      </mat-stepper>
+          
+   </div>
+
+
+   <div>
+
+      <button mat-raised-button matTooltip="You are understanding the concept of tooltip">Tooltip</button>
+
+         </div>
+
+
+           
+<div>
+           
+   <mat-accordion>
+                  
+      <mat-expansion-panel hideToggle>
+                       
+         <mat-expansion-panel-header>
+                            
+            <mat-panel-title>Yash Expansion Panel</mat-panel-title>
+                            
+            <mat-panel-description>This is the explanation of expansion panel</mat-panel-description>
+                          
+         </mat-expansion-panel-header>
+                       
+         <h1>Welcome to expansion panel</h1>
+                     
+      </mat-expansion-panel>
+                  <mat-expansion-panel (opened)="openState=true" (closed)="openState=false">
+                    
+      <mat-expansion-panel-header>
+                         
+         <mat-panel-title>Yash Expansion Panel with icon</mat-panel-title>
+                         
+         <mat-panel-description>This is the explanation of expansion panel with icon {{openState?'open':'closed'}}</mat-panel-description>
+                       
+      </mat-expansion-panel-header>
+                    
+      <h1>opening using icon</h1>
+                  </mat-expansion-panel>
+              
+   </mat-accordion>
+       
+</div>
+    
+<div>
+         
+   <mat-button-toggle-group #group="matButtonToggleGroup" name="fontStyle" aria-label="fontStyle" multiple>
+              
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+              
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+              
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+            
+   </mat-button-toggle-group>
+         
+   <div>{{group.value}}</div>
+       
+</div>
+
+<div>
+           
+   <mat-form-field appearance="fill">
+                  
+      <mat-label>Message</mat-label>
+                  <input matInput value="Welcome to Yash" #message>
+              
+   </mat-form-field>
+           
+   <mat-form-field appearance="fill">
+                
+      <mat-label>Action</mat-label>
+                <input matInput value="Jaynam Sanghvi" #action>
+            
+   </mat-form-field>
+         <button mat-stroked-button (click)="openSnackBar(message.value,action.value)" >Demonstration of Snack Bar</button>
+       
+</div>
+

@@ -1,0 +1,47 @@
+<style>
+    .myDiv {
+    border: 5px outset red;
+    background-color: rgb(87, 176, 224);    
+    text-align: center;
+    }
+    * {
+    box-sizing: border-box;
+    }
+    .box {
+    float: left;
+    width: 30.33%;
+    padding: 30px;
+    }
+    .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+ </style>
+
+ <div class="myDiv">
+    <div >
+       <form [formGroup]="formGroup" (ngSubmit)="saveCourseDetails()" >
+       <h3>Add Course</h3>
+       <p>
+          <mat-form-field appearance="outline" class="example-full-width">
+             <mat-label>Enter Subject Name</mat-label>
+             <mat-icon> person_pin</mat-icon>
+             <input matInput  formControlName="subjectname" >
+             <mat-error *ngIf="formGroup.controls['subjectname'].hasError('pattern')">Subject name is mandatory</mat-error>
+          </mat-form-field>
+         
+       </p>
+       <p>
+
+          <mat-form-field appearance="outline" class="example-full-width">
+             <mat-label>Enter Subject version</mat-label>
+             <mat-icon>remove_red_eye</mat-icon>
+             <input matInput  formControlName="version" >
+             <mat-error *ngIf="formGroup.controls['version'].hasError('required')">password is required</mat-error>
+          </mat-form-field>
+       </p>
+       <button mat-raised-button color="accent" appearance="outline" class="example-full-width">Save Course Details</button>
+       </form>
+    </div>
+ </div>

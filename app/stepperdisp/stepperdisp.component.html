@@ -1,0 +1,38 @@
+<p>List Of Application Details</p>
+
+<table border="2">
+    <tr>
+       <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>FatherName</th>
+        <th>Mother Name</th>
+        <th>Date Of Birth</th>
+        <th>Gender</th>
+        <th>MobileNumber</th>
+        <th>Bank Account Name</th>
+        <th>Bank Account Number</th>
+        <th>Bank Name</th>
+        <th>Internet bank</th>
+        <th>Mobile bank</th>
+        <th>Prasent Address</th>
+        <th>Permnent Adress</th>
+    </tr>
+    <tr *ngFor="let a of stepperList">
+            <td>{{a.id}}</td>
+            <td>{{a.name}}</td>
+            <td>{{a.emailid}}</td>
+            <td>{{a.fathername}}</td>
+            <td>{{a.mothername}}</td>
+            <td>{{a.dob}}</td>
+            <td>{{a.gender}}</td>
+            <td>{{a.mobilenumber}}</td>
+            <td>{{a.bankname}}</td>
+            <td>{{a.bankaccno}}</td>
+            <td>{{a.bankname}}</td>
+            <td>{{a.ibank}}</td>
+            <td>{{a.mbank}}</td>
+            <td>{{a.prasentaddress}}</td>
+            <td>{{a.permnentaddress}}</td>
+    </tr>
+</table>

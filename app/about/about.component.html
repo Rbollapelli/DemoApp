@@ -1,0 +1,25 @@
+<button mat-button color="primary" (click)="openDialogWithTemplateRef(myDialog)">Open CEO Message</button>
+<button mat-button color="accent" (click)="openDialogWithoutRef()">OpenContact Details</button>
+<p><small>See the source code for more info</small></p>
+<!-- Dialog template -->
+<ng-template #myDialog>
+  <h2 matDialogTitle>Message!</h2>
+  <mat-dialog-content>
+    <p>The last couple of years have changed everything for businesses, leaders, associates, and people. As the dust around settles down, one fact is clear. Everyone is wondering about the future of work. YASH aims to embrace all the possibilities of what's coming NeXT. To build a better world, thinkers and doers like us must ideate, collaborate, and act together. <code>ng-template</code></p>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button matDialogClose color="primary">Dismiss</button>
+  </mat-dialog-actions>
+</ng-template>
+<!-- Dialog template #2 -->
+<ng-template #secondDialog>
+  <h2 matDialogTitle>Contact Details!</h2>
+  <mat-dialog-content>
+    <p>201-205 Bansi Trade Center 581/5 M. G. Road Indore - MP 452001	91-731-4261100	91-731-4261234 <code>ng-template</code></p>
+    <mat-slide-toggle>I'm a slide toggle!</mat-slide-toggle>
+    <mat-checkbox>I'm a checkbox!</mat-checkbox>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button matDialogClose color="primary">I <mat-icon class="inline-icon">favorite</mat-icon> dialogs!</button>
+  </mat-dialog-actions>
+</ng-template>
